@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'SairaExtraCondensed';
+    src: url('font/SairaExtraCondensed-Bold.ttf') format('truetype');
+  }
+  
+   .text_tittle {
+    font-family: 'SairaExtraCondensed';
+  }
+  .about_text > .section .text{
+    font-family: 'SairaExtraCondensed';
+    font-size: 26px;
+  }
+  #archive > .container > .archive > .right_archive > .right_archive_child .text_tittle{
+    font-size: 28px;
+  }
+  .right_archive_child span{
+    font-family: 'SairaExtraCondensed';
+  }
+  .left_international span{
+    font-family: 'SairaExtraCondensed';
+  }
+  #news_list>.container > .tittle > p{
+    font-size: 60px;
+    font-family: 'SairaExtraCondensed';
+  }
+@font-face {
+    font-family: 'poppins-regular';
+    src: url('font/Poppins-Regular.ttf') format('truetype');
+  }
+  #services > .container > .list > .list_item > .about_text > p{
+    font-family: 'poppins-regular';
+  }
+  #services > .container > .list > .list_item > .about_image > p{
+    font-family: 'poppins-regular';
+  }
+  #archive > .container > .archive > .left_archive > .text_about > p {
+    font-size: 20px;
+    font-family: 'poppins-regular';
+  }
+  #archive > .container > .archive > .left_archive > .text_about > p {
+    font-size: 20px;
+    font-family: 'poppins-regular';
+  }
+  .right_archive_child .text_about > p{
+    font-family: 'poppins-regular';
+  }
+  .right_international > .about > p{
+    font-family: 'poppins-regular';
+  }
+  .right_international > .rank > p{
+    font-family: 'poppins-regular';
+    font-size: 20px;
+  }
+  #testimonial > .container >.about {
+    font-family: 'poppins-regular';
+    font-size: 20px;
+  }
+  #testimonial > .container >.list > .list_item > .image>.text_user > p:nth-child(2) {
+    font-family: 'poppins-regular';
+  }
+  #testimonial > .container >.list > .list_item > .text > p{
+      font-family: 'poppins-regular';
+      font-size: 20px;
+  }
+  #team_list > .team_img > .team_img_item > .about_contact > .about > p{
+    font-family: 'poppins-regular';
+    font-size: 16px;
+    color: #fff;
+  }
+  #news_list>.container > .blog_list > .blog_item > .about_blog, .about_img > p{
+    font-family: 'poppins-regular';
+    font-size: 16px;
+  }
+@font-face {
+  font-family: 'poppins-medium';
+  src: url('font/Poppins-Medium.ttf') format('truetype');
+}
+  #archive > .container > .archive > .left_archive > .btn_get > p{
+    font-size: 18px;
+    font-family: 'poppins-medium';
+  }
+  #team_list > .container >.about {
+    font-family: 'poppins-medium';
+    font-size: 20px;
+  }
+  #team_list > .team_img > .team_img_item > .about_contact > .name > p{
+    font-family: 'poppins-medium';
+    font-size: 24px;
+    color: #fff;
+  }
+  #news_list>.container > .about > .about_text > p{
+    font-size: 20px;
+    font-family: 'poppins-medium';
+  }
+  #news_list>.container > .about > .more_blog > .btn_more_blog > p{
+    font-size: 18px;
+    font-family: 'poppins-medium';
+  }
+  #news_list>.container > .blog_list > .blog_item > .tittle_blog > p{
+    font-family: 'poppins-medium';
+    font-size: 24px;
+  }
+@font-face {
+  font-family: 'poppins-semibold';
+  src: url('font/Poppins-SemiBold.ttf') format('truetype');
+}
+  #testimonial > .container >.list > .list_item > .image>.text_user > p:nth-child(1) {
+    font-family: 'poppins-semibold';
+  }
