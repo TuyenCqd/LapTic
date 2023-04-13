@@ -221,6 +221,14 @@ html{
         }
 /* main */
         /* banner */
+            @keyframes moveUpDown {
+                0% {
+                transform: translateX(0);
+                }
+                100% {
+                transform: translateX(50%);
+                }
+            }
             #wrapper_banner {
                 background-image: url(../Images/Banner/banner_background_1.png);
                 background-repeat: no-repeat;
@@ -234,6 +242,7 @@ html{
                 top: 135px;
                 left: 135px;
                 z-index: 5;
+                animation: moveUpDown 1s ease-in-out infinite alternate;
             }
             #wrapper_banner>.banner_layer{
                 position: absolute;
@@ -242,10 +251,19 @@ html{
                 background-image: linear-gradient(to right, #fffbf3 60%, rgba(255, 255, 255, 0));
                 z-index: 0;
             }
+            @keyframes moveUpAndDown {
+                0% {
+                  transform: translateY(0%);
+                }
+                100% {
+                  transform: translateY(50%);
+                }
+              }
             #wrapper_banner > .banner_trang_khuyet{
                 position: absolute;
                 bottom: 45px;
                 right: 110px;
+                animation: moveUpAndDown 1s ease-in-out infinite alternate;
             }
             #wrapper_banner > .container{
                 margin: 145px auto;
