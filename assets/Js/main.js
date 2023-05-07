@@ -1,24 +1,41 @@
+$(document).ready(function() {
+  $("#preload").fadeIn(500); // hiển thị div trong 0.5 giây
+  $(window).scrollTop(0); // di chuyển đến đầu trang
+});
 
-$(function(){
-  //to-top
-    $(window).scroll(function() {
-      console.log("hi");
-      $("#to_top").hide();
-      var to_top = $("#to_top");
-      if ($(window).scrollTop() > 100) {
-        console.log("hi1");
-        $("#to_top").show();
-      } else {
-        console.log("hi2");
-        to_top.hide();
-      }
-    });
+$(window).on("load", function() {
+  $("#preload").fadeOut(500); // ẩn div trong 0.5 giây khi trang đã tải xong
+});
+
+
+$(document).ready(function() {
+  // Ẩn button ban đầu
+  $('#arrow').hide();
+
+  // Hiển thị hoặc ẩn button khi lướt trang
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#arrow').fadeIn();
+    } else {
+      $('#arrow').fadeOut();
+    }
+  });
+
+  // Cuộn trang lên đầu khi click vào button
+  $('#arrow').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 100);
+    return false;
+  });
+});
+$(document).ready(function(){
     //loading
-    $('#preload').show();
-    setTimeout(function() {
-        // Ẩn div sau 5 giây
-        $('#preload').hide();
-    }, 5000);
+    // $('#preload').show();
+    // setTimeout(function() {
+    //     // Ẩn div sau 5 giây
+    //     $('#preload').hide();
+    // }, 5000);
     //chuyển số thành chữ
     function formatNumber(num) {
         if (num >= 1000) {
@@ -66,4 +83,51 @@ $(function(){
     counter("count2", 0, 10000, 20);
     counter("count3", 0, 10000, 20);
     counter("count4", 0, 5045, 20);
+
+    //
+    $("#fag-item-about").hide();
+    $("#plus").show();
+    $("#minus").hide();
+    $("#fag-item-about1").hide();
+    $("#plus1").show();
+    $("#minus1").hide();
+    $("#fag-item-about2").hide();
+    $("#plus2").show();
+    $("#minus2").hide();
+    $("#fag-item-about3").hide();
+    $("#plus3").show();
+    $("#minus3").hide();
+
+    // Hiển thị hoặc ẩn phần tử khi bấm vào button
+    $("#btn_submit").on("click", function() {
+      $("#fag-item-about").toggle();
+      $("#minus").toggle();
+      $("#plus").toggle();
+    });
+    $("#btn_submit1").on("click", function() {
+      $("#fag-item-about1").toggle();
+      $("#minus1").toggle();
+      $("#plus1").toggle();
+    });
+    $("#btn_submit2").on("click", function() {
+      $("#fag-item-about2").toggle();
+      $("#minus2").toggle();
+      $("#plus2").toggle();
+    });
+    $("#btn_submit3").on("click", function() {
+      $("#fag-item-about3").toggle();
+      $("#minus3").toggle();
+      $("#plus3").toggle();
+    });
+    //nav-moblie 
+    $("#nav-res").on("click", function() {
+      $("#nav-mobile").addClass('show');
+      $("#layer_mobile").addClass('show');
+    });
+    
+    $("#quit").on("click", function() {
+      $("#nav-mobile").removeClass('show');
+      $("#layer_mobile").removeClass('show');
+    });
+    
 });

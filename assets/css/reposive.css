@@ -1,0 +1,900 @@
+@media only screen and (min-width: 1920px){
+    .location {
+        flex: 3 !important;
+    }
+    .blobal {
+        flex: 8.5 !important;
+    }
+}
+@media (min-width: 1200x ) and (max-width:1919px){
+    .col-xl.mail {
+        flex: 0.5;
+    }
+    .nav_menu.col-xl.col-lg-12 {
+        display: flex;
+        align-items: center;
+    }
+    #news_list>.container > .about > .col:nth-child(1){
+        flex: 9;
+    }
+    #news_list>.container > .about > .col:nth-child(2){
+        flex: 3;
+    }
+}
+@media (min-width: 992px ) and (max-width:1199px){
+    body {
+        overflow-x: hidden;
+    }
+    /* header */
+        .mail , .location , .blobal{
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .nav_menu {
+            margin: 20px 0;
+        }
+        .blobal {
+            padding: 0 !important;
+        }
+    /* nav */
+        .nav_logo{
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .nav_phone {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        .phone_number{
+            display: none;
+        }
+        .nav_search{
+            display: none;
+        }
+        .wrapper-search {
+            visibility: visible;
+            display: flex;
+        }
+        ul.nav_list {
+            padding: 0 0 0 0;
+        }
+    /* main */
+        /* banner */
+            #wrapper_banner::before {
+                top: 50px;
+            }
+        /* about */
+            #about > .container::before {
+                top: -65px;
+                right: -31px;
+            }
+            #about > .container::after {
+                top: -100px;
+                left: 65px;
+            }
+            .about_child > .about_image::after {
+                top: -25px;
+                right: 15px;
+            }
+            .about_child > .about_text.col-xl {
+                margin: 0 0 0 0;
+                padding: 0;
+            }
+            .about_child > .about_text > .section > .left > .image {
+                margin: 8px 0 28px 0;
+            }
+            .about_child > .about_text > .text_tittle::before {
+                right: 7px;
+            }
+            .about_child > .about_text > p.last {
+                margin: 10px 120px 10px 0;
+            }
+            .about_child > .about_text > p.last::after {
+                top: 45px;
+                left: 0;
+            }
+            .about_child > .about_text::after {
+                right: -271px;
+            }
+            .about_child > .about_image > .image > .man_image {
+                bottom: -160px;
+                right: 0px;
+            }
+            .about_child > .about_text::before {
+                bottom: -179px;
+                left: -6px;
+            }
+        /* services */
+            #services > .container > .text_tittle::before {
+                top: 55px;
+                right: 335px;
+            }
+            #services > .container::before {
+                left: 0px;
+                top: 60px;
+            }
+            #services > .container::after {
+                right: 0px;
+                bottom: -145px;
+            }
+        /* archive */
+            #archive > .container > .archive {
+                gap: 40px;
+            }
+            .right_archive::before {
+                top: 40px;
+                left: -15px;
+            }
+            .right_archive::after {
+                top: 10px;
+                left: 10px;
+            }
+        /* international */
+            #international::after {
+                bottom: 50px;
+                right: 105px;
+            }
+        /* testimonial */
+            #testimonial > .container > .text_tittle::before {
+                bottom: 3px;
+                right: 290px;
+            }
+        /* project */
+            #project > .first > .text_tittle > p {
+                padding: 0 10%;
+            }
+            #project > .first > .text_tittle > p::before {
+                bottom: -15px;
+                left: 254px;
+            }
+            #project > .image::before {
+                top: -210px;
+                right: 100px;
+            }
+            #project > .image > .image_item {
+                height: 364px;
+            }
+            #project > .image > .image_item > .about_img {
+                padding: 10px 10px 10px 10px;
+            }
+            #project > .second > .about_pro {
+                position: relative;
+                padding: 0 75px;
+            }
+            #project > .second > .about_pro::before {
+                top: -30px;
+                left: 0px;
+            }
+            #project > .second > .about_pro::after {
+                bottom: -30px;
+                left: 0;
+            }
+        /* faq */
+            .fag-item >.tittle {
+                padding: 20px 60px 20px 10px;
+            }
+            .fag-item >.tittle > i {
+                right: 23px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        /* team_list */
+            #team_list > .container > .text_tittle::before {
+                bottom: 6px;
+                right: 235px;
+            }
+            #team_list::before {
+                top: 70px;
+                right: 81px;
+            }
+            #team_list > .team_img {
+                gap: unset;
+            }
+            #team_list > .team_img > .team_img_item {
+                background-size: cover;
+                border: 5px solid #fff;
+            }
+            #team_list > .team_img > .team_img_item::before {
+                background: linear-gradient(to top, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 90%);
+            }
+            #team_list::after {
+                bottom: 62px;
+                left: 110px;
+            }
+        /* news_list */
+            #news_list>.container >.tittle {
+                text-align: center;
+            }
+            #news_list>.container > .about > .about_text{
+                text-align: center;
+            }
+            #team_list > .team_img > .team_img_item {
+                background-size: cover;
+                border: 5px solid #fff;
+            }
+            #news_list>.container > .about > .about_text > p {
+                position: unset;
+                margin: 20px;
+            }
+            #news_list>.container > .blog_list::before {
+                top: -53px;
+                right: 100px;
+            }
+    /* footer */
+    
+}
+@media (min-width: 768px ) and (max-width:991px){
+    /* header */
+        .mail , .location , .blobal{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .blobal{
+            margin: 20px 0 0 0;
+        }
+    /* nav */
+        .nav_menu{
+            display: none;
+        }
+        .nav_menu_res{
+            visibility: visible;
+            display: block;
+        }
+        .nav_logo{
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    /* main */
+        /* banner */
+            #wrapper_banner::before {
+                top: 35px;
+                left: 135px;
+            }
+            #wrapper_banner > .banner_trang_khuyet {
+                bottom: -10px;
+                right: 110px;
+            }
+        /* about */
+            .about_child > .about_text::before {
+                bottom: -200px;
+                left: 0;
+            }
+            .about_child > .about_text.col-xl {
+                margin: 0 0 0 0;
+            }
+            .about_child > .about_image {
+                margin: 0 0 0 0 !important;
+            }
+            .about_child > .about_text > .text_tittle::before {
+                top: 263px;
+                right: 194px;
+            }
+            .about_child > .about_text > p.last {
+                margin: 10px 35px 10px 0;
+            }
+            .about_child > .about_text > p.last::after {
+                top: 45px;
+                left: 0;
+            }
+            .about_child > .about_text::after {
+                top: -140px;
+                left: 340px;
+            }
+            #about > .container::before {
+                top: -90px;
+                right: -60px;
+            }
+            .about_child > .about_image > .image > .man_image {
+                bottom: -30px;
+                right: -61px;
+            }
+        /* services */
+            #services > .container::before {
+                left: 0;
+                top: 104px;
+            }
+            #services > .container > .text_tittle::before {
+                top: 55px;
+                right: 216px;
+            }
+            #services > .container::after {
+                right: 0;
+                bottom: -158px;
+            }
+            #services > .container > .list::after {
+                right: -245px;
+                top: 800px;
+            }
+            #services > .container > .list > .list_item {
+                text-align: center;
+            }
+            #services > .container > .list > .list_item > .more {
+                margin: 0 auto;
+            }
+        /* archive */
+            #archive > .container > .archive {
+                gap: 0;
+            }
+        /* international */
+            #international::after {
+                bottom: 0;
+                right: 105px;
+            }
+        /* testimonial */
+            #testimonial > .container > .text_tittle::before {
+                bottom: 3px;
+                right: 175px;
+            }
+        /* project */
+            #project > .first > .text_tittle > p {
+                padding: 0;
+            }
+            #project > .first > .text_tittle > p::before {
+                bottom: -15px;
+                left: 135px;
+            }
+            #project > .image > .image_item {
+                height: 500px;
+                border: 10px solid #fff;
+            }
+            #project > .image > .image_item > .about_img {
+                padding: 50px 10px;
+            }
+            #project > .image > .image_item > .about_img > .tittle > p {
+                font-size: 28px;
+            }
+            #project > .image > .image_item > .about_img > .text > p {
+                font-size: 16px;
+            }
+            .about_pro.row {
+                text-align: center;
+            }
+            #project > .second > .about_pro > .button {
+                justify-content: center;
+            }
+            #project > .second > .about_pro::before {
+                top: -80px;
+                left: 0;
+            }
+            #project > .second > .about_pro::after {
+                bottom: -30px;
+                right: 0;
+                left: unset;
+            }
+        /* fag */
+            .fag-left  {
+                text-align: center;
+            }
+            .check {
+                padding: 0 0 0 0;
+            }
+        /* team_list */
+            #team_list::before {
+                top: 85px;
+                left: 90px;
+                right: unset;
+            }
+            #team_list::after {
+                bottom: 0;
+                left: 110px;
+            }
+            #team_list > .team_img {
+                gap: unset;
+            }
+            #team_list > .team_img > .team_img_item {
+                margin: 0 0 10px 0;
+                background-size: cover;
+            }
+            #team_list > .container > .text_tittle::before {
+                bottom: 8px;
+                right: 114px;
+            }
+        /* news_list */
+            #news_list>.container >.tittle {
+                text-align: center;
+            }
+            #news_list>.container > .about > .about_text{
+                text-align: center;
+            }
+            #team_list > .team_img > .team_img_item {
+                background-size: cover;
+                border: 5px solid #fff;
+            }
+            #news_list>.container > .about > .about_text > p {
+                position: unset;
+                margin: 20px;
+            }
+            #news_list>.container > .blog_list::before {
+                top: -53px;
+                right: 100px;
+            }
+            #news_list>.container > .blog_list > .blog_item > .image {
+                height: 450px;
+                width: 450px;
+                margin: 0 auto;
+            }
+            #news_list>.container > .blog_list {
+                text-align: center;
+            }
+    /* footer */
+        .contact {
+            display: flex;
+            justify-content: center;
+            margin: 0 0 20px 0;
+        }
+        .checkbox {
+            justify-content: center;
+        }
+        .wrapper_footer::after {
+            right: 0;
+        }
+        .wrapper_footer::before {
+            left: 0;
+        }
+}
+@media (min-width: 576px ) and (max-width:767px){
+    /* header */
+        .mail , .location , .blobal{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto;
+        }
+    /* nav */
+        .row.nav {
+            padding: 31px 15% 23px 15%;
+        }
+        .nav_menu{
+            display: none;
+        }
+        .nav_menu_res{
+            visibility: visible;
+            display: block;
+        }
+        .nav_logo{
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    /* main */
+        /* banner */
+            #wrapper_banner::before {
+                left: unset;
+                top: 43px;
+                right: 50%;
+                transform: translateY(-50%);
+            }
+            .play_btn {
+                justify-content: center;
+            }
+        /* about */
+            #about > .container::after {
+                top: -125px;
+                left: 77px;
+            }
+            #about > .container::before {
+                top: unset;
+                bottom: 0;
+                right: 0;
+            }
+            .about_child > .about_text.col-xl {
+                margin: 0; 
+                padding: 0;
+            }
+            .about_child > .about_text > .text_tittle, p.p_1, p.p_2{
+                text-align: center;
+                padding: 0 10px;
+            }
+            .about_child > .about_text > .section {
+                justify-content: center;
+            }
+            .about_child > .about_text::before {
+                bottom: -800px;
+                left: 0;
+            }
+            .about_child > .about_text::after {
+                top: unset;
+                right: unset;
+                left: 35px;
+                bottom: -300px;
+            }
+            .about_child > .about_image {
+                margin: 100px 0 0 55px !important;
+                padding: 0;
+                height: 500px;
+            }
+            .about_child > .about_image::after {
+                top: -40px;
+                right: 70px;
+            }
+            .about_child > .about_image > .image {
+                width: 80%;
+            }
+            .about_child > .about_image > .image > .man_image {
+                bottom: -70px;
+                right: -35px;
+            }
+        /* services */
+            #services > .container > .text_tittle::before {
+                top: 50px;
+                right: 35px;
+            }
+            #services > .container::before {
+                left: 0;
+                top: 170px;
+            }
+            #services > .container > .list > .list_item {
+                text-align: center;
+            }
+            #services > .container > .list > .list_item > .about_text {
+                padding: 0 50px;
+            }
+            #services > .container > .list > .list_item > .more {
+                margin: 0 auto;
+            }
+        /* archive */
+            .row.archive {
+                text-align: center;
+            }
+            #archive > .container > .archive {
+                gap: 65px;
+            }
+            .container > .archive > .left_archive > .btn_get {
+                margin: 70px auto 0 auto !important;
+            }
+        /* international */
+            #international {
+                padding: 75px 0 185px 0 !important;
+            }
+            #international::before {
+                bottom: unset;
+                right: 80px;
+                translate: unset;
+                top: 668px;
+            }
+            #international::after {
+                bottom: 40px;
+                right: 50%;
+                transform: translateY(-50%);
+            }
+            .left_international {
+                height: 655px;
+            }
+            .right_international.col-xl.col.col-sm-12 {
+                text-align: center;
+            }
+        /* testimonial */
+            #testimonial > .container > .text_tittle::before {
+                bottom: 3px;
+                right: 80px;
+            }
+        /* project */
+            #project > .first > .text_tittle > p{
+                padding: 0 !important;
+            }
+            #project > .first > .text_tittle > p::before {
+                bottom: 43px;
+                left: 225px;
+            }
+            #project > .image::before {
+                top: -635px;
+                right: 70px;
+            }
+            #project > .image {
+                gap: 50px;
+                padding: 50px;
+            }
+            #project > .second > .about_pro > .text {
+                text-align: center;
+            }
+            #project > .second > .about_pro > .button {
+                justify-content: center;
+            }
+            #project > .second > .about_pro::before {
+                top: -30px;
+                left: 0;
+            }
+            #project > .second > .about_pro::after {
+                bottom: 71px;
+                left: unset;
+                right: 0px;
+            }
+        /* faq */
+            div#faq {
+                padding: 100px 0 0 0;
+            }
+            .fag-left{
+                text-align: center;
+            }
+            .check{
+                padding: 0 !important;
+            }
+        /* team_list */
+            #team_list::before {
+                top: 0;
+            }
+            #team_list > .container > .text_tittle::before {
+                bottom: 7px;
+                right: 23px;
+            }
+            #team_list::after {
+                bottom: 0;
+            }
+            #team_list > .team_img > .team_img_item {
+                height: 658px !important;
+            }
+        /* news_list */
+            #news_list>.container > .tittle > p {
+                text-align: center;
+                margin: 0 0 90px 0;
+            }
+            #news_list>.container > .about > .about_text > p {
+                text-align: center;
+            }
+            #news_list>.container > .about > .about_text > p {
+                bottom: 20px;
+            }
+            #news_list>.container > .blog_list > .blog_item > .image {
+                height: 535px;
+            }
+    /* footer */
+        .contact {
+            display: flex;
+            justify-content: center;
+            margin: 0 0 20px 0;
+        }
+        .wrapper_footer::after {
+            right: 0;
+        }
+        .wrapper_footer::before {
+            left: 0;
+        }
+        .footer_top.row > .col {
+            text-align: center;
+            padding: 0;
+        }
+        .footer_top > .col-md-6.col-sm-12.col {
+            text-align: center;
+        }
+        .checkbox {
+            justify-content: center;
+        }
+}
+@media only screen and (max-width: 575px){
+    /* header */
+        .mail , .location , .blobal{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto;
+        }
+    /* nav */
+        .row.nav {
+            padding: 31px 15% 23px 15%;
+        }
+        .nav_menu{
+            display: none;
+        }
+        .nav_menu_res{
+            visibility: visible;
+            display: block;
+        }
+        .nav_logo{
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    /* main */
+        /* banner */
+            #wrapper_banner::before {
+                left: unset;
+                top: 43px;
+                right: 50%;
+                transform: translateY(-50%);
+            }
+            .play_btn {
+                justify-content: center;
+            }
+            button.get_btn {
+                margin: 30px auto;
+            }
+        /* about */
+            #about > .container::after {
+                top: -125px;
+                left: 77px;
+            }
+            #about > .container::before {
+                top: unset;
+                bottom: 0;
+                right: 0;
+            }
+            .about_child > .about_text.col-xl {
+                margin: 0; 
+                padding: 0;
+            }
+            .about_child > .about_text > .text_tittle, p.p_1, p.p_2{
+                text-align: center;
+                padding: 0 10px;
+            }
+            .about_child > .about_text > .section {
+                justify-content: center;
+            }
+            .about_child > .about_text::before {
+                bottom: -800px;
+                left: 0;
+            }
+            .about_child > .about_text::after {
+                top: unset;
+                right: unset;
+                left: 35px;
+                bottom: -300px;
+            }
+            .about_child > .about_image {
+                margin: 100px 0 0 55px !important;
+                padding: 0;
+                height: 500px;
+            }
+            .about_child > .about_image::after {
+                top: -40px;
+                right: 70px;
+            }
+            .about_child > .about_image > .image {
+                width: 80%;
+            }
+            .about_child > .about_image > .image > .man_image {
+                bottom: -70px;
+                right: -35px;
+            }
+        /* services */
+            #services > .container > .text_tittle::before {
+                top: 50px;
+                right: 35px;
+            }
+            #services > .container::before {
+                left: 0;
+                top: 170px;
+            }
+            #services > .container > .list > .list_item {
+                text-align: center;
+            }
+            #services > .container > .list > .list_item > .about_text {
+                padding: 0 50px;
+            }
+            #services > .container > .list > .list_item > .more {
+                margin: 0 auto;
+            }
+        /* archive */
+            .row.archive {
+                text-align: center;
+            }
+            #archive > .container > .archive {
+                gap: 65px;
+            }
+            .container > .archive > .left_archive > .btn_get {
+                margin: 70px auto 0 auto !important;
+            }
+        /* international */
+            #international {
+                padding: 75px 0 185px 0 !important;
+            }
+            #international::before {
+                bottom: unset;
+                right: 80px;
+                translate: unset;
+                top: 668px;
+            }
+            #international::after {
+                bottom: 40px;
+                right: 50%;
+                transform: translateY(-50%);
+            }
+            .left_international {
+                height: 655px;
+            }
+            .right_international.col-xl.col.col-sm-12 {
+                text-align: center;
+            }
+        /* testimonial */
+            #testimonial > .container > .text_tittle::before {
+                bottom: 3px;
+                right: 80px;
+            }
+        /* project */
+            #project > .first > .text_tittle > p{
+                padding: 0 !important;
+            }
+            #project > .first > .text_tittle > p::before {
+                bottom: 43px;
+                left: 225px;
+            }
+            #project > .image::before {
+                top: -635px;
+                right: 70px;
+            }
+            #project > .image {
+                gap: 50px;
+                padding: 50px;
+            }
+            #project > .second > .about_pro > .text {
+                text-align: center;
+            }
+            #project > .second > .about_pro > .button {
+                justify-content: center;
+            }
+            #project > .second > .about_pro::before {
+                top: -30px;
+                left: 0;
+            }
+            #project > .second > .about_pro::after {
+                bottom: 71px;
+                left: unset;
+                right: 0px;
+            }
+        /* faq */
+            div#faq {
+                padding: 100px 0 0 0;
+            }
+            .fag-left{
+                text-align: center;
+            }
+            .check{
+                padding: 0 !important;
+            }
+        /* team_list */
+            #team_list::before {
+                top: 0;
+            }
+            #team_list > .container > .text_tittle::before {
+                bottom: 7px;
+                right: 23px;
+            }
+            #team_list::after {
+                bottom: 0;
+            }
+            #team_list > .team_img > .team_img_item {
+                height: unset;
+            }
+        /* news_list */
+            #news_list>.container > .tittle > p {
+                text-align: center;
+                margin: 0 0 90px 0;
+            }
+            #news_list>.container > .about > .about_text > p {
+                text-align: center;
+            }
+            #news_list>.container > .about > .about_text > p {
+                bottom: 20px;
+            }
+            #news_list>.container > .blog_list > .blog_item > .image {
+                height: 535px;
+            }
+    /* footer */
+        .contact {
+            display: flex;
+            justify-content: center;
+            margin: 0 0 20px 0;
+        }
+        .wrapper_footer::after {
+            right: 0;
+        }
+        .wrapper_footer::before {
+            left: 0;
+        }
+        .footer_top.row > .col {
+            text-align: center;
+            padding: 0;
+        }
+        .footer_top.row {
+            text-align: center;
+        }
+        .footer_bottom.row {
+            text-align: center;
+        }
+        .footer_top > .col-md-6.col-sm-12.col {
+            text-align: center;
+        }
+        .checkbox {
+            justify-content: center;
+        }
+}

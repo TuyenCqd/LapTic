@@ -1,4 +1,12 @@
 @font-face {
+    font-family: 'BerkshireSwash-Regular';
+    src: url('font/BerkshireSwash-Regular.ttf') format('truetype');
+  }
+  .nav_logo > h1{
+    font-size: 46px;
+    font-family: 'BerkshireSwash-Regular','SairaExtraCondensed';
+  }
+@font-face {
     font-family: 'SairaExtraCondensed';
     src: url('font/SairaExtraCondensed-Bold.ttf') format('truetype');
   }
@@ -10,8 +18,13 @@
     font-family: 'SairaExtraCondensed';
     font-size: 26px;
   }
-  #archive > .container > .archive > .right_archive > .right_archive_child .text_tittle{
+  .about_child > .about_text > .section p {
+     font-family: 'SairaExtraCondensed';
+    font-size: 26px;
+  }
+  #archive > .container > .archive > .right_archive > .right_archive_child .text_tittle > p{
     font-size: 28px;
+    font-family: 'SairaExtraCondensed';
   }
   .right_archive_child span{
     font-family: 'SairaExtraCondensed';
@@ -23,18 +36,55 @@
     font-size: 60px;
     font-family: 'SairaExtraCondensed';
   }
+  #project>.container > .tittle > p{
+    font-size: 60px;
+    font-family: 'SairaExtraCondensed';
+  }
+  #project > .image > .image_item > .about_img > .tittle > p{
+    font-size: 36px;
+    font-family: 'SairaExtraCondensed';
+  }
+  .fag-left > .text-tittle > p{
+    font-size: 65px;
+    font-family: 'SairaExtraCondensed';
+  }
+@font-face {
+    font-family: 'poppins-SemiBold';
+    src: url('font/Poppins-SemiBold.ttf') format('truetype');
+  }
+  .about_child > .about_text > span.see > a{
+    font-size: 16px;
+    font-family: 'poppins-SemiBold';
+}
 @font-face {
     font-family: 'poppins-regular';
     src: url('font/Poppins-Regular.ttf') format('truetype');
   }
+  header p{
+    font-size: 16px;
+    font-family: 'poppins-regular';
+  }
+  .text_about > p {
+    font-size: 20px;
+    font-family: 'poppins-regular';
+    font-weight: bold;
+}
+  .about_child > .about_text.col-xl > p.p_2 {
+    font-size: 16px;
+    font-family: 'poppins-regular';
+}
+  .about_child > .about_text > p.last {
+    font-size: 16px;
+    font-family: 'poppins-regular';
+}
+  #services > .container > .about > p {
+    font-size: 20px;
+    font-family: 'poppins-regular';
+}
   #services > .container > .list > .list_item > .about_text > p{
     font-family: 'poppins-regular';
   }
   #services > .container > .list > .list_item > .about_image > p{
-    font-family: 'poppins-regular';
-  }
-  #archive > .container > .archive > .left_archive > .text_about > p {
-    font-size: 20px;
     font-family: 'poppins-regular';
   }
   #archive > .container > .archive > .left_archive > .text_about > p {
@@ -51,7 +101,7 @@
     font-family: 'poppins-regular';
     font-size: 20px;
   }
-  #testimonial > .container >.about {
+  #testimonial > .container >.about > p{
     font-family: 'poppins-regular';
     font-size: 20px;
   }
@@ -62,18 +112,70 @@
       font-family: 'poppins-regular';
       font-size: 20px;
   }
+  .fag-left > .text-about > p{
+    font-size: 20px;
+    font-family: 'poppins-regular';
+  }
+  .fag-left > .text-check > .check > p{
+    font-size: 16px;
+    font-family: 'poppins-regular';
+  }
   #team_list > .team_img > .team_img_item > .about_contact > .about > p{
     font-family: 'poppins-regular';
     font-size: 16px;
     color: #fff;
   }
+  #team_list > .container >.about > p {
+    font-family: 'poppins-regular';
+    font-size: 20px;
+  }
   #news_list>.container > .blog_list > .blog_item > .about_blog, .about_img > p{
     font-family: 'poppins-regular';
     font-size: 16px;
   }
+  #project > .container >.about > p {
+    font-family: 'poppins-regular';
+    font-size: 20px;
+  }
+  #project > .image > .image_item > .about_img > .text > p{
+    font-family: 'poppins-regular';
+    font-size: 16px;
+  }
+  .fag-item-about  > p{
+    font-family: 'poppins-regular';
+    font-size: 16px;
+  }
+  p.mail {
+    font-family: 'poppins-regular';
+    font-size: 17px;
+  }
+  ul.footer_list>li > a {
+    font-family: 'poppins-regular';
+    font-size: 17px;
+}
 @font-face {
   font-family: 'poppins-medium';
   src: url('font/Poppins-Medium.ttf') format('truetype');
+}
+  ul.nav_list li a {
+    font-size: 18px;
+    font-family: 'poppins-medium';
+  }
+  .nav_moblie > ul.nav_mobile_list > li > a{
+    font-size: 18px;
+    font-family: 'poppins-medium';
+  }
+  .phone_number > p:last-child {
+    font-size: 24px;
+    font-family: 'poppins-medium';
+}
+ .get_btn > .text > p {
+    font-size: 18px;
+    font-family: 'poppins-medium';
+}
+.about_child > .about_text.col-xl > p.p_1 {
+    font-family: 'poppins-medium';
+    font-size: 20px;
 }
   #archive > .container > .archive > .left_archive > .btn_get > p{
     font-size: 18px;
@@ -100,6 +202,23 @@
     font-family: 'poppins-medium';
     font-size: 24px;
   }
+  #project > .second > .about_pro > .text > p{
+    font-family: 'poppins-medium';
+    font-size: 28px;
+  }
+  #project > .second > .about_pro > .button > .button_child > a{
+    font-family: 'poppins-medium';
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .fag-item > .tittle > p{
+    font-family: 'poppins-medium';
+    font-size: 18px;
+  }
+  .footer_top>.col>h3 {
+    font-family: 'poppins-medium';
+    font-size: 22px;
+}
 @font-face {
   font-family: 'poppins-semibold';
   src: url('font/Poppins-SemiBold.ttf') format('truetype');
@@ -107,3 +226,19 @@
   #testimonial > .container >.list > .list_item > .image>.text_user > p:nth-child(1) {
     font-family: 'poppins-semibold';
   }
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url('font/Roboto-Regular.ttf') format('truetype');
+  }
+  .phone_number > p:first-child > a {
+    font-size: 15px;
+    font-family: 'Roboto-regular';
+}
+@font-face {
+    font-family: 'Gloss_And_Bloom';
+    src: url('font/Gloss_And_Bloom.ttf') format('truetype');
+  }
+  .play_btn > .text > p {
+    font-size: 24px;
+    font-family: 'Gloss_And_Bloom';
+}

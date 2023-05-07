@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/reposive.css">
     <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -13,53 +14,57 @@
 </head>
 <body>
     <div class="wrapper container-fluid">
-        <a href="#" id="to_top">
-            <div id="arrow">
-                <i class="fa-sharp fa-solid fa-arrow-up"></i>
-            </div>
-        </a>
-        <div id="preload">
-            <div class="loading">
-                <span>L</span>
-                <span>O</span>
-                <span>A</span>
-                <span>D</span>
-                <span>I</span>
-                <span>N</span>
-                <span>G</span>
-                <span>.</span>
-                <span>.</span>
-                <span>.</span>                    
-            </div>
-        </div>
+        <div id="layer_mobile" class="layer_mobile"></div>
+        <button  id="arrow">
+            <i class="fa-sharp fa-solid fa-arrow-up"></i>
+        </button>
+        <div id="preload"></div>
         <header>
             <div class="row">
-                <div class="col-xl mail">
+                <div class="col-xl col-lg-4 col-md-6 col-sm-12 mail">
                     <a href="#">
                         <i class="fa-regular fa-envelope fa-lg"></i>
                         <p>needhelp@yoursite.com</p>
                     </a>
                 </div>
-                <div class="col-xl location">
+                <div class="col-xl col-lg-4 col-md-6 col-sm-12 location">
                     <a href="#">
                         <i class="fa fa-location-dot fa-lg"></i>
                         <p>66 Broklyn Street, USA</p>
                     </a>
                 </div>
-                <div class="col-xl blobal">
+                <div class="col-xl col-lg-4 col-md-12 col-sm-12 blobal">
                     <a href="#">
                         <P>Global Certificate: ISO 19007:2014</P>
                     </a>
                 </div>
             </div>
         </header>
-        <nav>
+        <div id="nav-mobile" class="nav_moblie">
+            <div class="nav_logo">
+                <img src="assets/Images/Logo/logo.png" alt="Logo-image">
+                <h1>Laptic</h1>
+            </div>
+            <ul  class="nav_mobile_list">
+                <li class="list_item"><a href="#">Home</a></li>
+                <li class="list_item"><a href="#">Services</a></li>
+                <li class="list_item"><a href="#">About</a></li>
+                <li class="list_item"><a href="#">Page</a></li>
+                <li class="list_item"><a href="#">Blog</a></li>
+                <li class="list_item"><a href="#">Solution</a></li>
+                <li class="list_item"><a href="#">Contact</a></li>
+            </ul>
+            <button id="quit" class="nav_quit">
+                <i class="fa-solid fa-x fa-3x"></i>
+            </button>
+        </div>       
+        <nav class="container-fluid">
             <div class="row nav">
-                <div class="nav_logo col-xl">
+                <div class="nav_logo col-xxl col-xl col-lg-12 col-md-12 col-sm-12">
                         <img src="assets/Images/Logo/logo.png" alt="Logo-image">
                         <h1>Laptic</h1>
                 </div>
-                <div class="nav_menu col-xl">
+                <div class="nav_menu col-xxl col-xl col-lg-12 col-md-6">
                     <ul class="nav_list">
                         <li class="list_item"><a href="#">Home</a></li>
                         <li class="list_item"><a href="#">Services</a></li>
@@ -70,23 +75,34 @@
                         <li class="list_item"><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="nav_phone col-xl">
+                <div class="nav_menu_res col-md-6 col-sm-6 col-6">
+                    <button id="nav-res" class="nav_res">
+                        <i class="fa-solid fa-bars fa-3x"></i>
+                    </button>
+                </div>
+                <div class="nav_phone col-xxl col-xl col-lg-12 col-md-6 col-sm-6 col-6">
                     <div class="wrapper_nav_info">
                         <div class="nav_info_phone">
                             <div class="logo_phone">
                                 <a href="#">
-                                    <i class="fa-solid fa-phone fa-xl"></i>
+                                    <i class="fa-solid fa-phone fa-2x"></i>
                                 </a>
                             </div>
                             <div class="phone_number">
-                                <p>CALL NOW</p>
+                                <p> <a href=""> CALL NOW </a></p>
                                 <p>01682648101</p>
                             </div>
                         </div>
-                        <div class="nav_search">
+                        <button id="nav_search" class="nav_search">
                             <a href="#">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </a>
+                        </button>
+                        <div class="wrapper-search">
+                            <div class="search">
+                                <input name="search" type="text" placeholder="search ...">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -115,29 +131,29 @@
                         <div class="text_about">
                             <p>Laptics solutions has over 40 years experience in the logistics industry.</p>
                         </div>
-                        <div class="get_btn">
+                        <button class="get_btn">
                             <div class="text">
                                 <p>GET SOLUTION</p>
                             </div>
                             <div class="arrow">
                                 <img src="assets/Images/Banner/pngegg.png" alt="">
                             </div>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
             <div id="about">
                 <div class="container">
                     <div class="row about_child">
-                        <div class="about_text col-xl">
+                        <div class="about_text col-xl col-lg col-md col-sm-12">
                             <div class="text_tittle">
                                 <p>About Laptic Solutions</p>
                                 <p>Transport and Logistics</p>
                             </div>
-                                <p>Currie solutions has over 40 years experience in the logistics industry.</p>
-                                <p>We have the capability to tailor solutions for individual
+                                <p class="p_1">Currie solutions has over 40 years experience in the logistics industry.</p>
+                                <p class="p_2">We have the capability to tailor solutions for individual
                                     businesses by moulding our comprehensive range of services.   Our philosophy has always been to put the customer first and provide the best services we can</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit 
+                                <p class="p_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit 
                                     sed do eiusmod tempor incididunt ut labore.</p>
                             <div class="section">
                                 <div class="left">
@@ -157,9 +173,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="last">Lorem ipsum dolor sit amet, consectetur</p><span>See More about</span>
+                            <p class="last">Lorem ipsum dolor sit amet, consectetur</p><span class="see"><a href="">See More about</a> </span>
                         </div>
-                        <div class="about_image col-xl">
+                        <div class="about_image col-xl col-lg col-md col-sm-12">
                             <div class="image">
                                 <div class="man_image">
                                     <div class="top"></div>
@@ -176,12 +192,11 @@
                         <p>Transport and Logistics Solution</p>
                     </div>
                     <div class="about">
-                        <p>Stra</p>
                         <p>Our design services starts and ends with a best in class experience strategy that builds brands.
                         </p>
                     </div>
                     <div class="list row">
-                        <div class="list_item col-xl">
+                        <div class="list_item col-xl col-lg">
                             <div class="image">
                                 <img src="assets/Images/Services/air.png" alt="">
                             </div>
@@ -191,12 +206,12 @@
                             <div class="about_text">
                                 <p>Petroleum refiners, fuel transport and end-user sales at gas </p>
                             </div>
-                            <div class="more">
+                            <button class="more">
                                 <p>Discover More</p>
                                 <i class="fa-solid fa-arrow-right-long"></i>
-                            </div>
+                            </button>
                         </div>
-                        <div class="list_item col-xl">
+                        <div class="list_item col-xl col-lg">
                             <div class="image">
                                 <img src="assets/Images/Services/ocean.png" alt="">
                             </div>
@@ -206,12 +221,12 @@
                             <div class="about_text">
                                 <p>Petroleum refiners, fuel transport and end-user sales at gas </p>
                             </div>
-                            <div class="more">
+                            <button class="more">
                                 <p>Discover More</p>
                                 <i class="fa-solid fa-arrow-right-long"></i>
-                            </div>
+                            </button>
                         </div>
-                        <div class="list_item col-xl">
+                        <div class="list_item col-xl col-lg">
                             <div class="image">
                                 <img src="assets/Images/Services/road.png" alt="">
                             </div>
@@ -221,10 +236,10 @@
                             <div class="about_text">
                                 <p>Petroleum refiners, fuel transport and end-user sales at gas </p>
                             </div>
-                            <div class="more">
+                            <button class="more">
                                 <p>Discover More</p>
                                 <i class="fa-solid fa-arrow-right-long"></i>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -232,7 +247,7 @@
             <div id="archive">
                 <div class="container">
                     <div class="row archive ">
-                        <div class="left_archive col">
+                        <div class="left_archive col-xl col-lg col-md col-sm col-12">
                             <div class="text_tittle">
                                 <p>One place to manage all
                                     your shipments and tasks</p>
@@ -246,7 +261,7 @@
                                 <p>GET OUR STORY</p>
                             </div>
                         </div>
-                        <div class="right_archive col">
+                        <div class="right_archive col-xl col-lg col-md col-sm col-12">
                             <div class="right_archive_child row">
                                 <div class="wrapper_customer col">
                                     <div class="customer">
@@ -290,7 +305,7 @@
             <div id="international">
                 <div class="container">
                     <div class="row international">
-                        <div class="left_international col">
+                        <div class="left_international col-xl col-lg col-md col-sm-12 col-12">
                             <div class="customer">
                                 <div class="text_tittle">
                                     <p>Working hours</p>
@@ -302,13 +317,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="right_international col">
+                        <div class="right_international col-xl col-lg col-md col-sm-12 col-12">
                             <div class="text_tittle">
                                 <p>Best International
                                     Transportation Team</p>
                             </div>
                             <div class="about">
-                                <p>Strategy Senior Expert leadThere are many variations of passages of Lorem Ipsum available but the majority have suffered
+                                <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered
                                     alteration in some form.
                                 </p>
                             </div>
@@ -345,7 +360,7 @@
                         <p>There are many variations Lorem Ipsum available but the majority have suffered alteration in some form by injected humour</p>
                     </div>
                     <div class="list row">
-                        <div class="list_item col-xl">
+                        <div class="list_item col-xl col-lg">
                             <div class="image">
                                 <div class="avt">
                                     <img src="assets/Images/Testimorial/avt.png" alt="">
@@ -359,7 +374,7 @@
                                 <p>My team is the best team in its niche. Subscribe to one of our plans and see it for yourself! </p>
                             </div>
                         </div>
-                        <div class="list_item col-xl">
+                        <div class="list_item col-xl col-lg">
                             <div class="image">
                                 <div class="avt">
                                     <img src="assets/Images/Testimorial/avt.png" alt="">
@@ -382,8 +397,144 @@
                     </div>
                 </div>
             </div>
-            <div id="project"></div>
-            <div id="faq"></div>
+            <div id="project">
+                <div class="container first">
+                    <div class="text_tittle">
+                        <p>Whatever your industry, we are your 
+                           <span>global freight</span>  forwarder</p>
+                    </div>
+                    <div class="about">
+                        <p>Our experienced staff combined with our global network allow us 
+                            to provide the
+                            support you need</p>
+                    </div>
+                </div>
+                <div class="image row">
+                    <div class="image_item col-xl col-lg col-md-6 col-sm-12 col-12" >
+                        <div class="about_img">
+                            <div class="tittle">
+                                <p>Air charter network</p>
+                            </div>
+                            <div class="text">
+                                <p>Air freight companies with flexibility and guaranteed capacity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image_item col-xl col-lg col-md-6 col-sm-12 col-12" >
+                        <div class="about_img">
+                            <div class="tittle">
+                                <p>Air charter network</p>
+                            </div>
+                            <div class="text">
+                                <p>Air freight companies with flexibility and guaranteed capacity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image_item col-xl col-lg col-md-6 col-sm-12 col-12" >
+                        <div class="about_img">
+                            <div class="tittle">
+                                <p>Air charter network</p>
+                            </div>
+                            <div class="text">
+                                <p>Air freight companies with flexibility and guaranteed capacity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image_item col-xl col-lg col-md-6 col-sm-12 col-12" >
+                        <div class="about_img">
+                            <div class="tittle">
+                                <p>Air charter network</p>
+                            </div>
+                            <div class="text">
+                                <p>Air freight companies with flexibility and guaranteed capacity</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container second">
+                    <div class="about_pro row">
+                        <div class="text col-xl col-lg-7 col-md-12 col-sm-12">
+                            <p>We offer a wide range of Logistic Services via our own Specialist Fleet of Vehicles ans more
+                            </p>
+                        </div>
+                        <div class="button col-xl col-lg-5 col-md-12 col-sm-12">
+                            <button class="button_child">
+                                <a >Our More Cases</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="faq">
+                <div class="container">
+                    <div class="row">
+                        <div class="fag-left col-xl col-lg">
+                            <div class="text-tittle">
+                                <p>Focus Logistics And Transportation Team</p>
+                            </div>
+                            <div class="text-about">
+                                <p>As logistics specialists, we ensure every stage of the construc</p>
+                            </div>
+                            <div class="text-check">
+                                <div class="check">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p>We’re on a mission to minimise the effect of  construction on the planet</p>
+                                </div>
+                                <div class="check">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p>Air freight companies with flexibility</p>
+                                </div>
+                                <div class="check">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p>Efficient and cost-effective as possible.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fag-right col-xl col-lg">
+                            <div class="fag-item">
+                                <button class="tittle" id="btn_submit">
+                                    <p>01. What Does It Cost To Use laptics ?</p>
+                                    <i class="fa-solid fa-plus" id="plus"></i>
+                                    <i class="fa-solid fa-minus" id="minus"></i>
+                                </button>
+                                <div id="fag-item-about" class="fag-item-about">
+                                    <p>There is no license fee or monthly subscriptions for signing up or access. Optimise charges transaction fees and commission on shipments. For carriers, access is 100% free of charge.</p>
+                                </div>
+                            </div>
+                            <div class="fag-item">
+                                <button class="tittle" id="btn_submit1">
+                                    <p>02. When Do Carriers Get Paid On Laptics?</p>
+                                    <i class="fa-solid fa-plus" id="plus1"></i>
+                                    <i class="fa-solid fa-minus" id="minus1"></i>
+                                </button>
+                                <div id="fag-item-about1" class="fag-item-about">
+                                    <p>There is no license fee or monthly subscriptions for signing up or access. Optimise charges transaction fees and commission on shipments. For carriers, access is 100% free of charge.</p>
+                                </div>
+                            </div>
+                            <div class="fag-item">
+                                <button class="tittle" id="btn_submit2">
+                                    <p>03. After Completing A Delivery, How Do I Get Paid?</p>
+                                    <i class="fa-solid fa-plus" id="plus2"></i>
+                                    <i class="fa-solid fa-minus" id="minus2"></i>
+                                </button>
+                                <div id="fag-item-about2" class="fag-item-about">
+                                    <p>There is no license fee or monthly subscriptions for signing up or access. Optimise charges transaction fees and commission on shipments. For carriers, access is 100% free of charge.</p>
+                                </div>
+                            </div>
+                            <div class="fag-item">
+                                <button class="tittle" id="btn_submit3">
+                                    <p>04. What Locations Does Optimise Ship To?</p>
+                                    <i class="fa-solid fa-plus" id="plus3"></i>
+                                    <i class="fa-solid fa-minus" id="minus3"></i>
+                                </button>
+                                <div id="fag-item-about3" class="fag-item-about">
+                                    <p>There is no license fee or monthly subscriptions for signing up or access. Optimise charges transaction fees and commission on shipments. For carriers, access is 100% free of charge.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="team_list">
                 <div class="container">
                     <div class="text_tittle">
@@ -395,7 +546,7 @@
                     </div>
                 </div>
                 <div class="team_img row">
-                    <div class="team_img_item col">
+                    <div class="team_img_item col-xl col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="about_contact">
                             <div class="name">
                                 <p>Mahfuz Riad</p>
@@ -417,7 +568,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="team_img_item col">
+                    <div class="team_img_item col-xl col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="about_contact">
                             <div class="name">
                                 <p>Mahfuz Riad</p>
@@ -439,7 +590,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="team_img_item col">
+                    <div class="team_img_item col-xl col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="about_contact">
                             <div class="name">
                                 <p>Mahfuz Riad</p>
@@ -461,7 +612,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="team_img_item col">
+                    <div class="team_img_item col-xl col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="about_contact">
                             <div class="name">
                                 <p>Mahfuz Riad</p>
@@ -491,22 +642,22 @@
                         <p>From our blogs.</p>
                     </div>
                     <div class="about row">
-                        <div class="about_text col">
+                        <div class="about_text col-md-12 col-sm-12 col ">
                             <p>We believe in sharing check out our blog posts get more latet blog </p>
                         </div>
-                        <div class="more_blog col">
-                            <div class="btn_more_blog">
+                        <div class="more_blog col-md-12 col-sm-12 col ">
+                            <button class="btn_more_blog">
                                 <p>MORE BLOG LIST</p>
-                            </div>
+                            </button>
                         </div>
                     </div>
                     <div class="blog_list row">
-                        <div class="blog_item col">
+                        <div class="blog_item col-xl c0l-lg col-md col-sm-12 col-12">
                             <div class="image">
-                                <div class="learn">
+                                <button class="learn">
                                     <p>learn</p>
                                     <i class="fa-regular fa-plus"></i>
-                                </div>
+                                </button>
                             </div>
                             <div class="about_img">
                                 <p>LOGISTICS</p>
@@ -518,12 +669,12 @@
                                 <p>Focus Logistics are delighted to announce the securing of two new landmark </p>
                             </div>
                         </div>
-                        <div class="blog_item col">
+                        <div class="blog_item col-xl c0l-lg col-md col-sm-12 col-12">
                             <div class="image">
-                                <div class="learn">
+                                <button class="learn">
                                     <p>learn</p>
                                     <i class="fa-regular fa-plus"></i>
-                                </div>
+                                </button>
                             </div>
                             <div class="about_img">
                                 <p>CONSTRUCTION</p>
@@ -536,12 +687,12 @@
                                 <p>Focus Logistics are delighted to announce the securing of two new landmark </p>
                             </div>
                         </div>
-                        <div class="blog_item col">
+                        <div class="blog_item col-xl c0l-lg col-md col-sm-12 col-12">
                             <div class="image">
-                                <div class="learn">
+                                <button class="learn">
                                     <p>learn</p>
                                     <i class="fa-regular fa-plus"></i>
-                                </div>
+                                </button>
                             </div>
                             <div class="about_img">
                                 <p>LOGISTICS</p>
@@ -560,7 +711,7 @@
         <footer>
             <div class="wrapper_footer container">
                 <div class="footer_top row">
-                    <div class=" col">
+                    <div class=" col-md-12 col-sm-12 col-12">
                         <div class="nav_logo">
                             <img src="assets/Images/Logo/logo.png" alt="Logo-image">
                             <h1>Laptic</h1>
@@ -584,7 +735,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-3 col-sm-6 col-12">
                         <h3>Services</h3>
                         <ul class="footer_list">
                             <li><a href="#">Sea Freight</a></li>
@@ -595,7 +746,7 @@
                             <li><a href="#">All Solutions</a></li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col-md-3 col-sm-6 col-12">
                         <h3>Links</h3>
                         <ul class="footer_list">
                             <li><a href="#">About</a></li>
@@ -605,7 +756,7 @@
                             <li><a href="#">News</a></li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col-md-6 col-sm-12 co-12l">
                         <h3>Address</h3>
                         <ul class="footer_list">
                             <li><a href="#">248 10h Street, Office 478</a></li>
@@ -613,10 +764,10 @@
                         </ul>
                         <div class="email_address">
                             <i class="fa-regular fa-envelope fa-lg"></i>
-                            <p>Email address</p>
-                            <div class="arrow">
+                            <input type="text" placeholder="Email address">
+                            <button class="arrow">
                                 <i class="fa-solid fa-arrow-right-long"></i>
-                            </div>
+                            </button>
                         </div>
                         <div class="checkbox">
                             <input type="checkbox" name="" id="">
@@ -625,10 +776,10 @@
                     </div>
                 </div>
                 <div class="footer_bottom row">
-                    <div class="col-lg left">
+                    <div class="col-lg col-md-6 col-sm col-12 left">
                         <p>Copyright 2021 All Right Reserved</p>
                     </div>
-                    <div class="col-lg right">
+                    <div class="col-lg col-md-6 col-sm col-12 right">
                         <ul class="footer_menu">
                             <li><a href="#">About</a></li>
                             <li><a href="#">Services</a></li>
