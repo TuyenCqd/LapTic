@@ -116,6 +116,17 @@
       font-family: 'poppins-regular';
       font-size: 20px;
   }
+           .slide-content >.about > p{
+    font-family: 'poppins-regular';
+    font-size: 20px;
+  }
+           .slide-content >.list > .list_item > .image>.text_user > p:nth-child(2) {
+    font-family: 'poppins-regular';
+  }
+           .slide-content >.list > .list_item > .text > p{
+      font-family: 'poppins-regular';
+      font-size: 20px;
+  }
   .fag-left > .text-about > p{
     font-size: 20px;
     font-family: 'poppins-regular';
@@ -228,6 +239,9 @@
   src: url('font/Poppins-SemiBold.ttf') format('truetype');
 }
   #testimonial > .container >.list > .list_item > .image>.text_user > p:nth-child(1) {
+    font-family: 'poppins-semibold';
+  }
+  .slide-content >.list > .list_item > .image>.text_user > p:nth-child(1) {
     font-family: 'poppins-semibold';
   }
 @font-face {

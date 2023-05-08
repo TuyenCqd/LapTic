@@ -30,12 +30,6 @@ $(document).ready(function() {
   });
 });
 $(document).ready(function(){
-    //loading
-    // $('#preload').show();
-    // setTimeout(function() {
-    //     // Ẩn div sau 5 giây
-    //     $('#preload').hide();
-    // }, 5000);
     //chuyển số thành chữ
     function formatNumber(num) {
         if (num >= 1000) {
@@ -79,11 +73,35 @@ $(document).ready(function(){
           }, step/100);
         }
       }
-    counter("count1", 0, 1200, 50);
+    counter("count1", 0, 1200, 20);
     counter("count2", 0, 10000, 20);
     counter("count3", 0, 10000, 20);
-    counter("count4", 0, 5045, 20);
-
+    counter("count4", 0, 5045, 50);
+      //
+      var divWidth = 0;
+      var intervalId = setInterval(function() {
+        if (divWidth >= 90) {
+          // clearInterval(intervalId);
+        } else {
+          divWidth++;
+          $('#level1').css('width', divWidth + '%');
+          $('#label1').text(divWidth + '%');
+        }
+        if (divWidth >= 97) {
+          clearInterval(intervalId);
+        } else {
+          divWidth++;
+          $('#level2').css('width', divWidth + '%');
+          $('#label2').text(divWidth + '%');
+        }
+        if (divWidth >= 85) {
+          // clearInterval(intervalId);
+        } else {
+          divWidth++;
+          $('#level3').css('width', divWidth + '%');
+          $('#label3').text(divWidth + '%');
+        }
+      }, 100); 
     //
     $("#fag-item-about").hide();
     $("#plus").show();

@@ -755,15 +755,26 @@ body {
                 position: relative;
             }
             #services > .container > .list > .list_item {
+                border-radius: 5px;
                 background-color: #fff;
-                padding: 35px 25px ;
-                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);;
+                padding: 35px 25px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
                 position: relative;
                 z-index: 1;
                 border: 1px solid transparent;
             }
             #services > .container > .list > .list_item:hover{
-                border-color: #ee0a0a;
+                /* border-color: #ee0a0a; */
+                transform: translateY(-25px);
+                transition: all 0.5s;
+            }
+            #services > .container > .list > .list_item:hover > .image > img{
+                transform: rotateY(1turn);
+                transition: all 0.5s;
+            }
+            #services > .container > .list > .list_item:not(hover){
+                /* border-color: #ee0a0a; */
+                transition: all 0.3s;
             }
             #services > .container > .list > .list_item > .image {
                 margin-bottom: 15px;
@@ -1066,41 +1077,30 @@ body {
                 position: relative;
             }
             .right_international > .rank > .rank_child:nth-child(1) > .wrapper_level > .level{
-                width: 90%;
                 height: 100%;
                 background-color: #ff3f41;
             }
-            .right_international > .rank > .rank_child:nth-child(1) > .wrapper_level > .level::after{
-                content: '90%';
-                position: absolute;
-                top: -25px;
-                left: 90%;
-            }
             .right_international > .rank > .rank_child:nth-child(2) > .wrapper_level > .level{
-                width: 97%;
                 height: 100%;
                 background-color: #51cfee;
             }
-            .right_international > .rank > .rank_child:nth-child(2) > .wrapper_level > .level::after{
-                content: '97%';
-                position: absolute;
-                top: -25px;
-                left: 97%;
-            }
             .right_international > .rank > .rank_child:nth-child(3) > .wrapper_level > .level{
-                width: 85%;
                 height: 100%;
                 background-color: #fb9d49;
             }
-            .right_international > .rank > .rank_child:nth-child(3) > .wrapper_level > .level::after{
-                content: '85%';
+            .right_international > .rank > .rank_child > .wrapper_level > .level{
+                position: relative;
+                transition: width 0.5s ease;
+            }
+            .right_international > .rank > .rank_child > .wrapper_level > .level > label{
                 position: absolute;
-                top: -25px;
-                left: 85%;
+                top: -40px;
+                right: -20px;
             }
         /* testimonial */
-            #testimonial{
+            #testimonial {
                 padding: 0;
+                margin: 0 0 170px 0;
             }
             #testimonial > .container{
                 padding: 0;
@@ -1121,80 +1121,179 @@ body {
             #testimonial > .container >.about {
                 text-align: center;
                 padding: 0 20%;
-                margin: 20px auto 85px auto;
+                margin: 20px auto ;
             }
-            #testimonial > .container >.list{
+            #testimonial > .container >.about > p {
+                line-height: 32px;
+            }
+            .slide-content >.list {
+                margin: 60px 0 105px 0;
                 gap: 30px;
                 position: relative;
-                margin-bottom: 60px;
             }
-            #testimonial > .container >.list::after{
+            #slides:after{
                 content: url(../Images/Alike/khuyet_yellow_nho.png);
                 position: absolute;
-                bottom: -30px;
+                bottom: 75px;
                 left: -30px;
                 height: 60px;
                 width: 60px;
             }
-            #testimonial > .container >.list > .list_item:nth-child(1){
+            .slide-content >.list > .list_item:nth-child(1){
                 background-color: #f3fafc;
             }
-            #testimonial > .container >.list > .list_item:nth-child(1)::after{
+            .slide-content >.list > .list_item:nth-child(1)::after{
                 content: url(../Images/Testimorial/66.png);
                 position: absolute;
                 top: 85px;
                 right: 65px;
             }   
-            #testimonial > .container >.list > .list_item:nth-child(2){
+            .slide-content >.list > .list_item:nth-child(2){
                 background-color: #fff8ee;
             }
-            #testimonial > .container >.list > .list_item:nth-child(2)::after{
+            .slide-content >.list > .list_item:nth-child(2)::after{
                 content: url(../Images/Testimorial/66.png);
                 position: absolute;
                 top: 85px;
                 right: 65px;
             } 
-            #testimonial > .container >.list > .list_item{
-                padding: 65px 30px 95px 25px;
-                border: 1px solid transparent;
+            .slide-content >.list > .list_item{
+                padding: 65px 25px 85px 25px;
+                border: 3px solid transparent;
+                border-radius: 5px;
             }
-            #testimonial > .container >.list > .list_item:hover{
+            .slide-content >.list > .list_item:hover{
                 border-color: #07d2e0;
                 box-sizing: border-box;
                 transition: all 0.3s;
             }
-            #testimonial > .container >.list > .list_item:not(hover){
+            .slide-content >.list > .list_item:not(hover){
                 transition: all 0.3s;
             }
-            #testimonial > .container >.list > .list_item > .image{
+            .slide-content >.list > .list_item > .image{
                 display: flex;
             }
-            #testimonial > .container >.list > .list_item > .image>.text_user {
+            .slide-content >.list > .list_item > .image>.text_user {
+                display: grid;
                 margin: 10px;
-                
+                align-items: center;
+                color: #000;
             }
-            #testimonial > .container >.list > .list_item > .image>.text_user > p {
+            .slide-content >.list > .list_item > .image>.text_user > p {
+                color: #000;
+            }
+            .slide-content >.list > .list_item > .text > p{
                 margin: 10px;
             }
-            #testimonial > .container >.list > .list_item > .text > p{
-                margin: 10px;
+            #slider {
+                margin: 23px auto 100px auto;
+                max-width: 100%;
             }
-            #testimonial > .container >.slide_list{
+             #slider input[type=radio] {
+                display: none;
+             }
+             #slider label {
+                cursor:pointer;
+                text-decoration: none;
+             }
+             #slides {
+                position: relative;
+                z-index: 1;
+             }
+             #overflow {
+                width: 100%;
+                overflow: hidden;
+             }
+             #slide1:checked ~ #slides .inner {
+                margin-left: 0;
+             }
+             #slide2:checked ~ #slides .inner {
+                margin-left: -100%;
+             }
+             #slide3:checked ~ #slides .inner {
+                margin-left: -200%;
+             }
+             #slide4:checked ~ #slides .inner {
+                margin-left: -300%;
+             }
+             #slides .inner {
+                transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+                width: 400%;
+             }
+             #slides .slide {
+                width: 25%;
+                float:left;
                 display: flex;
-                gap: 7px;
                 justify-content: center;
-                margin-bottom: 175px;
+                align-items: center;
+                height: 100%;
+             }
+             #controls {
+                margin: -400px 0 330px 0;
+                width: 100%;
+                height: 10px;
+                z-index: 3;
+                position: relative;
             }
-            #testimonial > .container >.slide_list > .slide_list_item{
+             #controls label {
+                transition: opacity 0.2s ease-out;
+                display: none;
+                width: 200px;
+                height: 200px;
+                opacity: .4;
+             }
+             #controls label:hover {
+                opacity: 1;
+             }
+             #slide1:checked ~ #controls label:nth-child(2),
+             #slide2:checked ~ #controls label:nth-child(3),
+             #slide3:checked ~ #controls label:nth-child(4),
+             #slide4:checked ~ #controls label:nth-child(1) {
+                background: transparent;
+                float:right;
+                margin: 0 -50px 0 0;
+                display: block;
+             }
+             #slide1:checked ~ #controls label:nth-last-child(2),
+             #slide2:checked ~ #controls label:nth-last-child(3),
+             #slide3:checked ~ #controls label:nth-last-child(4),
+             #slide4:checked ~ #controls label:nth-last-child(1) {
+                background: transparent;
+                float:left;
+                margin: 0 0 0 -50px;
+                display: block;
+             }
+             #bullets {
+                margin: 0;
+                text-align: center;
+             }
+             #bullets label {
+                display: inline-block;
+                margin: 0 4px;
                 width: 20px;
                 height: 5px;
                 background-color: #e7e6e5;
                 border-radius: 25%;
             }
-            #testimonial > .container >.slide_list > .slide_list_item:nth-child(1){
+             #slide1:checked ~ #bullets label:nth-child(1),
+             #slide2:checked ~ #bullets label:nth-child(2),
+             #slide3:checked ~ #bullets label:nth-child(3),
+             #slide4:checked ~ #bullets label:nth-child(4) {
                 width: 30px;
                 background-color: #ff3f41;
-            }
+             }
+             @media screen and (min-width: 1200px) {
+                #slide1:checked ~ #controls label:nth-child(2),
+                #slide2:checked ~ #controls label:nth-child(3),
+                #slide3:checked ~ #controls label:nth-child(4),
+                #slide4:checked ~ #controls label:nth-child(1),
+                #slide1:checked ~ #controls label:nth-last-child(2),
+                #slide2:checked ~ #controls label:nth-last-child(3),
+                #slide3:checked ~ #controls label:nth-last-child(4),
+                #slide4:checked ~ #controls label:nth-last-child(1) {
+                   margin: 0;
+                }
+             }
         /* project */
             #project {
                 padding: 118px 0 116px 0;
@@ -1245,6 +1344,7 @@ body {
                 background-size: cover;
                 position: relative;
                 border-bottom: 5px solid transparent;
+                overflow: hidden;
             }
             #project > .image > .image_item:nth-child(1){
                 background-image: url(../Images/Project/img_1.png);
@@ -1264,10 +1364,11 @@ body {
             #project > .image > .image_item:hover .about_img{
                 opacity: 1;
                 transition: all 0.3s;
+                transform: translateY(0px);
             }
             #project > .image > .image_item > .about_img{
                 opacity: 0;
-                transition: opacity 0.3s ease-in-out; 
+                transition: all 0.5s; 
                 padding: 40px 25px 40px 65px;
                 text-align: center;
                 background-color: rgba(255, 255, 255, 0.8);
@@ -1275,6 +1376,7 @@ body {
                 bottom: -1px;
                 left: -1px;
                 right: 0;
+                transform: translateY(100px);
             }
             #project > .second {
                 padding: 125px 0 0 0 !important;
@@ -1449,15 +1551,18 @@ body {
                 padding: 0;
                 position: relative;
                 background-size: cover;
+                overflow: hidden;
             }
             #team_list > .team_img > .team_img_item:hover::before{
                 visibility: visible;
+                transform: translateY(0);
                 transition: all 0.8s;
             }
             #team_list > .team_img > .team_img_item:not(hover)::before{
-                transition: all 0.3s;
+                transition: all 0.5s;
             }
             #team_list > .team_img > .team_img_item::before{
+                transform: translateY(100px);
                 visibility: hidden;
                 content: '';
                 position: absolute;
