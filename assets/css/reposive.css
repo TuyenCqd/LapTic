@@ -1,27 +1,15 @@
-@media only screen and (min-width: 1920px){
+@media only screen and (min-width: 1201px){
     .location {
         flex: 3 !important;
     }
     .blobal {
         flex: 8.5 !important;
     }
-}
-@media (min-width: 1200x ) and (max-width:1919px){
-    .col-xl.mail {
-        flex: 0.5;
-    }
-    .nav_menu.col-xl.col-lg-12 {
-        display: flex;
-        align-items: center;
-    }
-    #news_list>.container > .about > .col:nth-child(1){
-        flex: 9;
-    }
-    #news_list>.container > .about > .col:nth-child(2){
-        flex: 3;
+    #news_list>.container > .about > .more_blog {
+        justify-content: end !important;
     }
 }
-@media (min-width: 992px ) and (max-width:1199px){
+@media (min-width: 992px ) and (max-width:1200px){
     body {
         overflow-x: hidden;
     }
@@ -38,7 +26,7 @@
             padding: 0 !important;
         }
     /* nav */
-        .nav_logo{
+        .nav_logo > a{
             justify-content: center;
             margin-bottom: 20px;
         }
@@ -204,9 +192,9 @@
                 left: 110px;
             }
         /* news_list */
-            #news_list>.container >.tittle {
-                text-align: center;
-            }
+        #news_list>.container >.tittle {
+            justify-content: center;
+        }
             #news_list>.container > .about > .about_text{
                 text-align: center;
             }
@@ -223,6 +211,16 @@
                 right: 100px;
             }
     /* footer */
+        p.mail {
+            justify-content: center;
+        }
+        .contact {
+            justify-content: center;
+            margin: 30px;
+        }
+        .col-xl.col-md-6.col-sm-12.col-12 {
+            text-align: center;
+        }
     
 }
 @media (min-width: 768px ) and (max-width:991px){
@@ -233,7 +231,7 @@
             justify-content: center;
         }
         .blobal{
-            margin: 20px 0 0 0;
+            display: none;
         }
     /* nav */
         .nav_menu{
@@ -242,10 +240,14 @@
         .nav_menu_res{
             visibility: visible;
             display: block;
+            text-align: end;
         }
-        .nav_logo{
+        .nav_logo > a {
             justify-content: center;
             margin-bottom: 20px;
+        }
+        .nav_phone{
+            display: none;
         }
     /* main */
         /* banner */
@@ -257,27 +259,56 @@
                 bottom: -10px;
                 right: 110px;
             }
+            .banner > .text_tittle > p{
+                font-size: 100px;
+                padding: 0 20% 0 5%;
+            }
+            .play_btn {
+                justify-content: center;
+            }
+            
+            .banner > .text_about {
+                padding: 0 10%;
+                text-align: center;
+            }
+            button.get_btn {
+                margin: 70px auto 0 auto;
+            }            
         /* about */
+            #about > .container::after {
+                top: 0;
+                left: 0;
+            }
             .about_child > .about_text::before {
                 bottom: -200px;
                 left: 0;
             }
-            .about_child > .about_text.col-xl {
-                margin: 0 0 0 0;
+            .row.about_child {
+                gap: 30px;
+            }
+            .about_child > .about_text{
+                margin: 0 0 0 0 !important;
+                text-align: center;
+            }
+            .about_child > .about_text::before {
+                bottom: -980px;
+                left: 0;
             }
             .about_child > .about_image {
-                margin: 0 0 0 0 !important;
+                height: 773px;
+                margin: 0 20px 0 20px !important;
             }
             .about_child > .about_text > .text_tittle::before {
-                top: 263px;
-                right: 194px;
+                top: 133px;
+                right: 143px;
             }
             .about_child > .about_text > p.last {
                 margin: 10px 35px 10px 0;
             }
             .about_child > .about_text > p.last::after {
-                top: 45px;
-                left: 0;
+                top: 10px;
+                left: unset;
+                right: -97px;
             }
             .about_child > .about_text::after {
                 top: -140px;
@@ -286,6 +317,9 @@
             #about > .container::before {
                 top: -90px;
                 right: -60px;
+            }
+            .about_child > .about_text > .section {
+                justify-content: center;
             }
             .about_child > .about_image > .image > .man_image {
                 bottom: -30px;
@@ -310,6 +344,7 @@
             }
             #services > .container > .list > .list_item {
                 text-align: center;
+                margin: 0 30px;
             }
             #services > .container > .list > .list_item > .more {
                 margin: 0 auto;
@@ -394,7 +429,7 @@
             }
         /* news_list */
             #news_list>.container >.tittle {
-                text-align: center;
+                justify-content: center;
             }
             #news_list>.container > .about > .about_text{
                 text-align: center;
@@ -434,6 +469,10 @@
         .wrapper_footer::before {
             left: 0;
         }
+        .footer_top > .nav_logo > a {
+            justify-content: center !important;
+            margin-bottom: 20px;
+        }
 }
 @media (min-width: 576px ) and (max-width:767px){
     /* header */
@@ -453,10 +492,14 @@
         .nav_menu_res{
             visibility: visible;
             display: block;
+            text-align: end;
         }
-        .nav_logo{
-            justify-content: center;
+        .nav_logo > a{
+            justify-content: start;
             margin-bottom: 20px;
+        }
+        .nav_phone{
+            display: none;
         }
     /* main */
         /* banner */
@@ -626,6 +669,9 @@
                 height: 658px !important;
             }
         /* news_list */
+            #news_list>.container >.tittle {
+                justify-content: center;
+            }
             #news_list>.container > .tittle > p {
                 text-align: center;
                 margin: 0 0 90px 0;
@@ -658,6 +704,9 @@
         .footer_top > .col-md-6.col-sm-12.col {
             text-align: center;
         }
+        .footer_top.row {
+            text-align: center;
+        }
         .checkbox {
             justify-content: center;
         }
@@ -680,10 +729,14 @@
         .nav_menu_res{
             visibility: visible;
             display: block;
+            text-align: end;
         }
-        .nav_logo{
-            justify-content: center;
+        .nav_logo > a{
+            justify-content: start;
             margin-bottom: 20px;
+        }
+        .nav_phone{
+            display: none;
         }
     /* main */
         /* banner */
@@ -896,5 +949,9 @@
         }
         .checkbox {
             justify-content: center;
+        }
+        .col-lg.col-md-6.col-sm.col-12.right {
+            justify-content: center;
+            display: flex;
         }
 }

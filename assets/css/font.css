@@ -2,7 +2,11 @@
     font-family: 'BerkshireSwash-Regular';
     src: url('font/BerkshireSwash-Regular.ttf') format('truetype');
   }
-  .nav_logo > h1{
+  .nav_logo > a > h1{
+    font-size: 46px;
+    font-family: 'BerkshireSwash-Regular','SairaExtraCondensed';
+  }
+  .nav_moblie > .nav_logo > h1 {
     font-size: 46px;
     font-family: 'BerkshireSwash-Regular','SairaExtraCondensed';
   }

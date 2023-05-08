@@ -15,6 +15,10 @@
 <body>
     <div class="wrapper container-fluid">
         <div id="layer_mobile" class="layer_mobile"></div>
+        <div id="search"></div>
+        <div id="search-child">
+            <input name="search" type="text" placeholder="search ...">
+        </div>
         <button  id="arrow">
             <i class="fa-sharp fa-solid fa-arrow-up"></i>
         </button>
@@ -60,11 +64,13 @@
         </div>       
         <nav class="container-fluid">
             <div class="row nav">
-                <div class="nav_logo col-xxl col-xl col-lg-12 col-md-12 col-sm-12">
+                <div class="nav_logo col-xxl col-xl col-lg-12 col-md-6 col-sm-6 col-6">
+                    <a href="#">
                         <img src="assets/Images/Logo/logo.png" alt="Logo-image">
                         <h1>Laptic</h1>
+                    </a>
                 </div>
-                <div class="nav_menu col-xxl col-xl col-lg-12 col-md-6">
+                <div class="nav_menu col-xxl col-xl col-lg-12 ">
                     <ul class="nav_list">
                         <li class="list_item"><a href="#">Home</a></li>
                         <li class="list_item"><a href="#">Services</a></li>
@@ -80,7 +86,7 @@
                         <i class="fa-solid fa-bars fa-3x"></i>
                     </button>
                 </div>
-                <div class="nav_phone col-xxl col-xl col-lg-12 col-md-6 col-sm-6 col-6">
+                <div class="nav_phone col-xxl col-xl col-lg-12 ">
                     <div class="wrapper_nav_info">
                         <div class="nav_info_phone">
                             <div class="logo_phone">
@@ -115,7 +121,7 @@
                     <img src="assets/Images/Banner/Trang_khuyet.png" alt="">
                 </div>
                 <div class="container">
-                    <div class="banner">
+                    <div class="banner row">
                         <div class="play_btn">
                             <div class="btn">
                                 <i class="fa-solid fa-play fa-lg"></i>
@@ -145,7 +151,7 @@
             <div id="about">
                 <div class="container">
                     <div class="row about_child">
-                        <div class="about_text col-xl col-lg col-md col-sm-12">
+                        <div class="about_text col-xl col-lg col-md-12 col-sm-12">
                             <div class="text_tittle">
                                 <p>About Laptic Solutions</p>
                                 <p>Transport and Logistics</p>
@@ -175,7 +181,7 @@
                             </div>
                             <p class="last">Lorem ipsum dolor sit amet, consectetur</p><span class="see"><a href="">See More about</a> </span>
                         </div>
-                        <div class="about_image col-xl col-lg col-md col-sm-12">
+                        <div class="about_image col-xl col-lg col-md-12 col-sm-12">
                             <div class="image">
                                 <div class="man_image">
                                     <div class="top"></div>
@@ -638,14 +644,14 @@
             </div>
             <div id="news_list">
                 <div class="container">
-                    <div class="tittle">
+                    <div class="tittle row">
                         <p>From our blogs.</p>
                     </div>
                     <div class="about row">
-                        <div class="about_text col-md-12 col-sm-12 col ">
+                        <div class="about_text col-xl-8 col-lg-8 col-md-12 col-sm-12 col ">
                             <p>We believe in sharing check out our blog posts get more latet blog </p>
                         </div>
-                        <div class="more_blog col-md-12 col-sm-12 col ">
+                        <div class="more_blog  col-xl-4 col-lg-4 col-md-12 col-sm-12 col ">
                             <button class="btn_more_blog">
                                 <p>MORE BLOG LIST</p>
                             </button>
@@ -711,10 +717,12 @@
         <footer>
             <div class="wrapper_footer container">
                 <div class="footer_top row">
-                    <div class=" col-md-12 col-sm-12 col-12">
+                    <div class=" footer_top_item col-xl col-md-12 col-sm-12 col-12">
                         <div class="nav_logo">
-                            <img src="assets/Images/Logo/logo.png" alt="Logo-image">
-                            <h1>Laptic</h1>
+                            <a href="#">
+                                <img src="assets/Images/Logo/logo.png" alt="Logo-image">
+                                <h1>Laptic</h1>
+                            </a>
                         </div>
                         <p class="mail">infolaptic@gmail.com</p>
                         <div class="contact">
@@ -735,7 +743,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-12">
+                    <div class="footer_top_item col-xl col-md-3 col-sm-6 col-12">
                         <h3>Services</h3>
                         <ul class="footer_list">
                             <li><a href="#">Sea Freight</a></li>
@@ -746,7 +754,7 @@
                             <li><a href="#">All Solutions</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-12">
+                    <div class="footer_top_item col-xl col-md-3 col-sm-6 col-12">
                         <h3>Links</h3>
                         <ul class="footer_list">
                             <li><a href="#">About</a></li>
@@ -756,7 +764,7 @@
                             <li><a href="#">News</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-6 col-sm-12 co-12l">
+                    <div class="footer_top_item col-xl col-md-6 col-sm-12 col-12">
                         <h3>Address</h3>
                         <ul class="footer_list">
                             <li><a href="#">248 10h Street, Office 478</a></li>

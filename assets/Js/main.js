@@ -121,7 +121,7 @@ $(document).ready(function(){
     });
     //nav-moblie 
     $("#nav-res").on("click", function() {
-      $("#nav-mobile").addClass('show');
+      $("#nav-mobile").addClass("show");
       $("#layer_mobile").addClass('show');
     });
     
@@ -130,4 +130,20 @@ $(document).ready(function(){
       $("#layer_mobile").removeClass('show');
     });
     
+    $("#layer_mobile").on("click", function() {
+      $("#nav-mobile").removeClass('show');
+      $("#layer_mobile").removeClass('show');
+    });
+    $('#nav_search').on('click', function() {
+      $('#search').addClass('active');
+    });
+    $('#search').on('click', function() {
+        $("#search").removeClass('active');
+    });
+    $('#nav_search').on('click', function() {
+      $('#search-child').addClass('active-child');
+    });
+    $('#search').on('click', function() {
+        $("#search-child").removeClass('active-child');
+    });
 });
