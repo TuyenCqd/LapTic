@@ -4,8 +4,10 @@ html{
 .container {
     padding: 0 !important;
   }
+  main {
+    overflow: hidden;
+}
   #trailer {
-    visibility: hidden;
     position: fixed;
     top: 0;
     right: 0;
@@ -15,10 +17,9 @@ html{
     opacity: 0.9;
     background: radial-gradient(circle, #413939 -35%, #fff 200%);
     transition: transform 0.5s ease;
-    transform: translate(100%, 100%);
+    transform: translate(0, -100%);
   }
   #trailer-child {
-    visibility: hidden;
     position: fixed;
     top: 0;
     right: 0;
@@ -26,7 +27,7 @@ html{
     bottom: 0;
     z-index: 1001;
     transition: transform 0.5s ease;
-    transform: translate(100%, -100%);
+    transform: translate(-50%, -150%);
   }
   
   #trailer.active-trailer {
@@ -50,7 +51,6 @@ html{
     max-width: 910px;
     }
   #search {
-    visibility: hidden;
     position: fixed;
     top: 0;
     right: 0;
@@ -456,7 +456,7 @@ html{
                   transform: translateY(0%);
                 }
                 100% {
-                  transform: translateY(50%);
+                  transform: translateY(10%);
                 }
               }
               @keyframes moveDownAndUp {
@@ -722,6 +722,7 @@ html{
                 position: absolute;
                 bottom: -80px;
                 right: -110px;
+                animation: moveUpAndDown 2.5s ease-in-out infinite alternate;
            }
            .about_child > .about_image > .image >.man_image > .top ,.bottom {
                 position: absolute;
@@ -972,7 +973,7 @@ html{
                 gap: 30px;
                 position: relative;
                 z-index: 1;
-            }
+              }
             .right_archive_child .text_about{
                 margin: 0;
                 padding: 0;
