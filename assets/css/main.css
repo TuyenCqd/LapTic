@@ -1,12 +1,54 @@
 html{
     scroll-behavior: smooth;
 }
-body {
-    overflow-x: hidden;
-}
 .container {
     padding: 0 !important;
   }
+  #trailer {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1001;
+    opacity: 0.9;
+    background: radial-gradient(circle, #413939 -35%, #fff 200%);
+    transition: transform 0.5s ease;
+    transform: translate(100%, 100%);
+  }
+  #trailer-child {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1001;
+    transition: transform 0.5s ease;
+    transform: translate(100%, -100%);
+  }
+  
+  #trailer.active-trailer {
+    visibility: visible;
+    transform: translate(0, 0);
+    transition: transform 0.5s ease;
+  }
+  #trailer-child.active-trailer-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: transform 0.5s ease;
+}
+  video{
+    position: relative;
+    outline: none;
+    max-width: 910px;
+    }
   #search {
     visibility: hidden;
     position: fixed;
@@ -15,7 +57,8 @@ body {
     left: 0;
     bottom: 0;
     z-index: 1001;
-    background: radial-gradient(circle, #413939 30%, #fff 100%);
+    opacity: 0.9;
+    background: radial-gradient(circle, #413939 -35%, #fff 200%);
     transition: transform 0.5s ease;
     transform: translate(100%, -100%);
   }
@@ -1677,11 +1720,11 @@ body {
                 gap: 30px;
                 position: relative;
             }
-            #news_list>.container > .blog_list::before{
+            #news_list>.container > .blog_list::before {
                 content: url(../Images/Services/tron_xanh_nhat.png);
                 position: absolute;
-                top: -100px;
-                right: -450px;
+                top: -55px;
+                right: -365px;
                 z-index: 0;
             }
             #news_list>.container > .blog_list > .blog_item{

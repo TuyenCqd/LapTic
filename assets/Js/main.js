@@ -152,6 +152,7 @@ $(document).ready(function(){
       $("#nav-mobile").removeClass('show');
       $("#layer_mobile").removeClass('show');
     });
+    //search
     $('#nav_search').on('click', function() {
       $('#search').addClass('active');
     });
@@ -163,5 +164,24 @@ $(document).ready(function(){
     });
     $('#search').on('click', function() {
         $("#search-child").removeClass('active-child');
+    });
+    //trailer
+    $('#btn_trailer').on('click', function() {
+      $('#trailer').addClass('active-trailer');
+    });
+    $('#trailer').on('click', function() {
+        $("#trailer").removeClass('active-trailer');
+    });
+    $('#btn_trailer').on('click', function() {
+      $('#trailer-child').addClass('active-trailer-child');
+    });
+    $('#trailer').on('click', function() {
+        $("#trailer-child").removeClass('active-trailer-child');
+    });
+    $(document).mouseup(function(e) {
+      var container = $("#video-trailer");
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        $("#video-trailer")[0].pause();
+      }
     });
 });
