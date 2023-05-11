@@ -108,24 +108,18 @@ main {
     @keyframes inLeft {
         from {
         transform: translateX(100%);
-        opacity: 0;
         }
     
         to {
         transform: translateX(0);
-        opacity: 1;
         }
     }
     #arrow{
-        display: none;
         position: fixed;
         height: 50px;
         width: 50px;
         border-radius: 50%;
         background-color: #51cfed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         bottom: 150px;
         right: 50px;
         z-index: 9;
