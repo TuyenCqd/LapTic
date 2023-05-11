@@ -1,36 +1,58 @@
 $(document).ready(function() {
-  $("#preload").fadeIn(500); // hiển thị div trong 0.5 giây
+  $("#preload").fadeIn(300); // hiển thị div trong 0.5 giây
   $(window).scrollTop(0); // di chuyển đến đầu trang
 });
 
 $(window).on("load", function() {
-  $("#preload").fadeOut(500); // ẩn div trong 0.5 giây khi trang đã tải xong
+  $("#preload").fadeOut(300); // ẩn div trong 0.5 giây khi trang đã tải xong
 });
 
 
-$(document).ready(function() {
-  // Ẩn button ban đầu
-  $('#arrow').hide();
-
-  // Hiển thị hoặc ẩn button khi lướt trang
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('#arrow').fadeIn();
-    } else {
-      $('#arrow').fadeOut();
-    }
-  });
-
-  // Cuộn trang lên đầu khi click vào button
-  $('#arrow').click(function() {
-    $('html, body').animate({
-      scrollTop: 0
-    }, 100);
-    return false;
-  });
-});
 $(document).ready(function(){
-    //chuyển số thành chữ
+  // Ẩn button ban đầu
+    $('#arrow').hide();
+  //khi cuộn tới
+    $(window).scroll(function() {
+      // Hiển thị hoặc ẩn button khi lướt trang
+      if ($(this).scrollTop() > 100) {
+        $('#arrow').fadeIn();
+      } else {
+        $('#arrow').fadeOut();
+      }
+      // Cho chạy level khi cuộn tới
+      var divWidth = 0;
+      var intervalId = setInterval(function() {
+        if (divWidth >= 90) {
+          // clearInterval(intervalId);
+        } else {
+          divWidth++;
+          $('#level1').css('width', divWidth + '%');
+          $('#label1').text(divWidth + '%');
+        }
+        if (divWidth >= 97) {
+          clearInterval(intervalId);
+        } else {
+          divWidth++;
+          $('#level2').css('width', divWidth + '%');
+          $('#label2').text(divWidth + '%');
+        }
+        if (divWidth >= 85) {
+          // clearInterval(intervalId);
+        } else {
+          divWidth++;
+          $('#level3').css('width', divWidth + '%');
+          $('#label3').text(divWidth + '%');
+        }
+      }, 100); 
+    });
+    // Cuộn trang lên đầu khi click vào button
+    $('#arrow').click(function() {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 100);
+      return false;
+    });
+        //chuyển số thành chữ
     function formatNumber(num) {
         if (num >= 1000) {
           return (num / 1000).toFixed(0) + "k";
@@ -77,32 +99,7 @@ $(document).ready(function(){
     counter("count2", 0, 10000, 20);
     counter("count3", 0, 10000, 20);
     counter("count4", 0, 5045, 50);
-      //
-      var divWidth = 0;
-      var intervalId = setInterval(function() {
-        if (divWidth >= 90) {
-          // clearInterval(intervalId);
-        } else {
-          divWidth++;
-          $('#level1').css('width', divWidth + '%');
-          $('#label1').text(divWidth + '%');
-        }
-        if (divWidth >= 97) {
-          clearInterval(intervalId);
-        } else {
-          divWidth++;
-          $('#level2').css('width', divWidth + '%');
-          $('#label2').text(divWidth + '%');
-        }
-        if (divWidth >= 85) {
-          // clearInterval(intervalId);
-        } else {
-          divWidth++;
-          $('#level3').css('width', divWidth + '%');
-          $('#label3').text(divWidth + '%');
-        }
-      }, 100); 
-    //
+    // fag
     $("#fag-item-about").hide();
     $("#plus").show();
     $("#minus").hide();
@@ -115,7 +112,6 @@ $(document).ready(function(){
     $("#fag-item-about3").hide();
     $("#plus3").show();
     $("#minus3").hide();
-
     // Hiển thị hoặc ẩn phần tử khi bấm vào button
     $("#btn_submit").on("click", function() {
       $("#fag-item-about").toggle();
