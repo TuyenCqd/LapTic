@@ -19,31 +19,6 @@ $(document).ready(function(){
       } else {
         $('#arrow').fadeOut();
       }
-      // Cho chạy level khi cuộn tới
-      var divWidth = 0;
-      var intervalId = setInterval(function() {
-        if (divWidth >= 90) {
-          // clearInterval(intervalId);
-        } else {
-          divWidth++;
-          $('#level1').css('width', divWidth + '%');
-          $('#label1').text(divWidth + '%');
-        }
-        if (divWidth >= 97) {
-          clearInterval(intervalId);
-        } else {
-          divWidth++;
-          $('#level2').css('width', divWidth + '%');
-          $('#label2').text(divWidth + '%');
-        }
-        if (divWidth >= 85) {
-          // clearInterval(intervalId);
-        } else {
-          divWidth++;
-          $('#level3').css('width', divWidth + '%');
-          $('#label3').text(divWidth + '%');
-        }
-      }, 100); 
     });
     // Cuộn trang lên đầu khi click vào button
     $('#arrow').click(function() {
@@ -99,6 +74,73 @@ $(document).ready(function(){
     counter("count2", 0, 10000, 20);
     counter("count3", 0, 10000, 20);
     counter("count4", 0, 5045, 50);
+    // Cho chạy level khi cuộn tới
+        // var divWidth = 0;
+        // var intervalId = setInterval(function() {
+        //   if (divWidth >= 90) {
+        //     // clearInterval(intervalId);
+        //   } else {
+        //     divWidth++;
+        //     $('#level1').css('width', divWidth + '%');
+        //     $('#label1').text(divWidth + '%');
+        //   }
+        //   if (divWidth >= 97) {
+        //     clearInterval(intervalId);
+        //   } else {
+        //     divWidth++;
+        //     $('#level2').css('width', divWidth + '%');
+        //     $('#label2').text(divWidth + '%');
+        //   }
+        //   if (divWidth >= 85) {
+        //     // clearInterval(intervalId);
+        //   } else {
+        //     divWidth++;
+        //     $('#level3').css('width', divWidth + '%');
+        //     $('#label3').text(divWidth + '%');
+        //   }
+        // }, 100); 
+    //
+    var animationStarted = false;
+
+    $(window).scroll(function() {
+      if (!animationStarted && isScrolledIntoView($('#international'))) {
+        animationStarted = true;
+        var divWidth = 0;
+        var intervalId = setInterval(function() {
+          if (divWidth >= 90) {
+            // clearInterval(intervalId);
+          } else {
+            divWidth++;
+            $('#level1').css('width', divWidth + '%');
+            $('#label1').text(divWidth + '%');
+          }
+          if (divWidth >= 97) {
+            clearInterval(intervalId);
+          } else {
+            divWidth++;
+            $('#level2').css('width', divWidth + '%');
+            $('#label2').text(divWidth + '%');
+          }
+          if (divWidth >= 85) {
+            // clearInterval(intervalId);
+          } else {
+            divWidth++;
+            $('#level3').css('width', divWidth + '%');
+            $('#label3').text(divWidth + '%');
+          }
+        }, 100); 
+
+        $(window).off('scroll');
+      }
+    });
+
+    function isScrolledIntoView(elem) {
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height();
+      var elemTop = elem.offset().top;
+      var elemBottom = elemTop + elem.height();
+      return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
     // fag
     $("#fag-item-about").hide();
     $("#plus").show();
