@@ -4,7 +4,7 @@ html{
 .container {
     padding: 0 !important;
   }
-  main {
+main {
     overflow: hidden;
 }
   #trailer {
@@ -274,6 +274,7 @@ html{
             width: 400px;
             background-color: #fff;
             z-index: 100;
+            overflow: auto;
         }
         .nav_moblie > .nav_logo {
             display: flex;

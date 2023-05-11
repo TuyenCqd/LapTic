@@ -806,7 +806,7 @@
                 transform: translateY(-50%);
             }
             #wrapper_banner > .banner_layer {
-                background-image: linear-gradient(to right, #fffbf3 50%, rgba(255, 255, 255, 0));
+                background-image: linear-gradient(to right, #fffbf3 50%, rgba(255, 255, 255, 0.3));
             }
             .play_btn {
                 justify-content: center;
@@ -814,12 +814,23 @@
             button.get_btn {
                 margin: 30px auto;
             }
+            .banner > .text_tittle {
+                text-align: center;
+            }
+            .banner > .text_tittle::before {
+                content: url(../Images/Alike/gach_chan_nho.png);
+                position: absolute;
+                top: 38px;
+                left: 64px;
+                z-index: 1;
+            }
             .banner > .text_tittle > P {
                 font-size: 50px;
                 line-height: 50px;
             }
             .banner > .text_about {
                 padding: 0 ;
+                text-align: center;
               }
         /* about */
             #about > .container::after {
@@ -835,9 +846,13 @@
                 margin: 0; 
                 padding: 0;
             }
+            .about_child > .about_text > .text_tittle::before {
+                top: 120px;
+                right: 130px;
+            }
             .about_child > .about_text > .text_tittle, p.p_1, p.p_2{
                 text-align: center;
-                padding: 0 10px;
+                padding: 0 20px;
             }
             .about_child > .about_text > .section {
                 justify-content: center;
@@ -851,6 +866,24 @@
                 right: unset;
                 left: 35px;
                 bottom: -300px;
+            }
+            .about_child > .about_text > p.last {
+                display: flex;
+                justify-content: center;
+            }
+            .about_child > .about_text > p.last::after {
+                visibility: hidden;
+            }
+            span.see {
+                display: flex;
+                justify-content: center;
+            }
+            .about_child > .about_text > span.see::after {
+                content: url(../Images/About/gach_duoi.png);
+                position: absolute;
+                bottom: -5px;
+                left: 44%;
+                transform: translate(-44%,0);
             }
             .about_child > .about_image {
                 margin: 100px 0 0 55px !important;
@@ -992,6 +1025,13 @@
                 height: 535px;
             }
     /* footer */
+        footer::after,footer::before{
+            visibility: hidden;
+        }
+        .footer_top_item > .nav_logo > a {
+        justify-content: center;
+        margin-bottom: 20px;
+        }
         .contact {
             display: flex;
             justify-content: center;
@@ -1023,4 +1063,8 @@
             justify-content: center;
             display: flex;
         }
+        .email_address {
+            width: 80%;
+            margin: 0 auto 25px auto;
+          }
 }
